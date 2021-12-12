@@ -5,9 +5,9 @@ An in-progress proof-of-concept project made to test basic capabilities of multi
 (ADD HOW IT WILL WORK LOL)
 
 ## Progress / Goals
-Beginning date: 12-11-2021
-Percentage progress: 0%
-Description progress: very little
+Beginning date: 12-11-2021<br>
+Percentage progress: 0%<br>
+Description progress: very little<br>
 
 ### Goals
 - [ ] Write first tests
@@ -21,7 +21,7 @@ Description progress: very little
 - [ ] Complete project
 
 ## Sample
-THe most basic example:<br>
+The most basic example:<br>
 ```
 c => if( true ) {
 java => return true;
