@@ -9,9 +9,18 @@ Compilation date: 12-12-21 by Patrick Schmitz
 #include<iostream>
 #include<string>
 std::string FindSeparator( std::string line ) {
-    int pos = line.find( "=>" ) + 2; // find position of '=>'. add 2 to include the '=>' (might remove).
-    std::string str = line.substr( 0, pos );
-    std::cout<<line<<std::endl<<pos<<std::endl<<str<<std::endl;
+    int pos = line.find( "=>" ); // find position of '=>'. add 2 to include the '=>' (use in functions, this is needed for other purposes).
+    std::string str = line.substr( 0, pos + 2 ); // this is mostly a test, I can't find a purpose for this but it served as a good ground for further manipulation techniques.
+    std::string str_lang = line.substr( 0, pos - 1 ); // subtract 1 because it goes to the space before =>, and we don't want that.
+    std::string lang;
+    if( str_lang == "java" ) {
+        lang = "Java";
+    } else if( str_lang == "c" ) {
+        lang = "C";
+    } else {
+        lang = "undefined";
+    }
+    std::cout<<line<<std::endl<<pos<<std::endl<<str<<std::endl<<lang<<std::endl<<std::endl;
     return str;
 }
 int main( void ) {
