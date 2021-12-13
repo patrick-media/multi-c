@@ -2,7 +2,7 @@
 
 This is a test of string manipulation functions that may be used in this project.
 
-Compilation date: 12-12-21 by Patrick Schmitz
+Compilation date: 12-13-21 by Patrick Schmitz
 
 */
 
